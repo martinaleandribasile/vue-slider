@@ -34,7 +34,11 @@ var app = new Vue({
         interval: ""
     },
     methods: {
+        valueActiveIndex: function (i) {
+            this.activeIndexImg = i
+        },
         assignActiveImg: function (i) {
+            this.valueActiveIndex
             if (this.activeIndexImg === i) {
                 display = "d-block"
                 return true
