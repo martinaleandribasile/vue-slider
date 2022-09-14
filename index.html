@@ -17,7 +17,7 @@
 
         <div class="container">
             <div class="slider-wrapper" tabindex="0" @mouseover="stopInterval()" @mouseout="timingFunction()">
-
+                <!--si poteva fare direttamente con :src='slides[activeIndexImg].image' e per gli altri attributi-->
                 <div v-for="(photo,i) in slides" v-if="assignActiveImg(i)" class="item">
                     <img :class="display" :src="photo.image" :alt="photo.title" />
                     <div class=" text">
